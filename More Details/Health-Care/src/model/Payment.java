@@ -67,7 +67,7 @@ public class Payment {
 			}
 
 // Prepare the html table to be displayed
-			output = "<table border=\"1\"><tr><th>Payment Reference</th><th>Payment Method</th><th>Payment Amount</th><th>Payment Date</th></tr>";
+			output = "<table border=\\\"1\\\"><tr><th>Payment Reference</th><th>Payment Method</th><th>Payment Amount</th><th>Payment Date</th></tr>";
 			String query = "select * from payments";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
