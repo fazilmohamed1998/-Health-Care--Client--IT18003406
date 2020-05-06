@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.3
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: May 06, 2020 at 02:40 PM
+- Server version: 10.1.36-MariaDB
+- PHP Version: 5.6.38
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="test" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="payments">
+                CREATE TABLE `payments` (
+                  `paymentID` int(250) NOT NULL AUTO_INCREMENT,
+                  `paymentReference` varchar(2500) NOT NULL,
+                  `paymentMethod` varchar(2500) NOT NULL,
+                  `paymentAmount` varchar(2500) NOT NULL,
+                  `paymentDate` date NOT NULL,
+                  PRIMARY KEY (`paymentID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'test'
+    -->
+    <database name="test">
+        <!-- Table payments -->
+        <table name="payments">
+            <column name="paymentID">1</column>
+            <column name="paymentReference">180420200900</column>
+            <column name="paymentMethod">C/Card</column>
+            <column name="paymentAmount">5000.0</column>
+            <column name="paymentDate">2020-04-29</column>
+        </table>
+        <table name="payments">
+            <column name="paymentID">6</column>
+            <column name="paymentReference">000000555555</column>
+            <column name="paymentMethod">D/Card</column>
+            <column name="paymentAmount">2560.0</column>
+            <column name="paymentDate">2020-04-22</column>
+        </table>
+        <table name="payments">
+            <column name="paymentID">7</column>
+            <column name="paymentReference">020202020202</column>
+            <column name="paymentMethod">D/Card</column>
+            <column name="paymentAmount">5555.0</column>
+            <column name="paymentDate">2020-02-02</column>
+        </table>
+    </database>
+</pma_xml_export>
